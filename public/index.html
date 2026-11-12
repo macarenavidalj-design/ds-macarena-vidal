@@ -321,12 +321,12 @@ footer{padding:var(--espacio-5) 0;font-size:var(--texto-s)}
   <div class="lienzo">
     <div class="casilla"><h4>1 · Para quién</h4><p>Una mujer de 34 años que perdió su empleo y quiere saber cómo está su región sin leer un boletín completo.</p></div>
     <div class="casilla"><h4>2 · Su problema</h4><p>Hoy, para saber cómo está su región, tiene que encontrar y leer un boletín en PDF del INE.</p></div>
-    <div class="casilla clave"><h4>3 · En cinco segundos</h4><p>Ve el mapa, la palabra «desempleo» y la cifra de su región.</p></div>
+    <div class="casilla clave"><h4>3 · En cinco segundos</h4><p>El desempleo en Ñuble es de un 11,2% y es uno de los más altos del país.</p></div>
     <div class="casilla clave"><h4>4 · La primera pantalla</h4><p>Teléfono, de arriba hacia abajo: título, «Tasa de desempleo en tu región», mapa con la cifra grande, comparación con el país, botones y fuente. Detalle en el boceto.</p></div>
     <div class="casilla"><h4>5 · Lo que puede hacer</h4><ul><li>Elegir su región.</li><li>Abrir la ayuda.</li></ul><p>Nada más.</p></div>
-    <div class="casilla"><h4>6 · Lo que hace el agente</h4><p>Vigila al INE cada mañana, lee el boletín, extrae las cifras de las 16 regiones, redacta y deja una traza. <b>Una persona aprueba con nombre antes de publicar.</b> El agente no inventa cifras ni causas.</p></div>
+    <div class="casilla"><h4>6 · Lo que hace el agente</h4><p>Vigila al INE cada mañana, lee el boletín, extrae las cifras de las 16 regiones, redacta y deja una traza. <b>Un equipo aprueba antes de publicar.</b> El agente no inventa cifras ni causas.</p></div>
     <div class="casilla"><h4>7 · Lo que no promete</h4><ul><li>Nada por comuna (la ENE no lo permite).</li><li>Ninguna causa que el INE no publique.</li><li>Ninguna proyección.</li><li>No muestra todo el boletín: solo tasa regional, comparación con el país, puntos de diferencia y tasa por sexo.</li></ul><p>Estos límites se dicen en la pantalla.</p></div>
-    <div class="casilla"><h4>8 · Por qué confiar</h4><p>Cada cifra con fuente y fecha (INE), aprobación humana con nombre y declaración visible de uso de IA.</p></div>
+    <div class="casilla"><h4>8 · Por qué confiar</h4><p>Cada cifra con fuente y fecha (INE), aprobación humana de un equipo y declaración visible de uso de IA.</p></div>
   </div>
 
   <h3>Boceto de la primera pantalla</h3>
@@ -386,7 +386,7 @@ footer{padding:var(--espacio-5) 0;font-size:var(--texto-s)}
     <li><strong>Teléfono primero.</strong><p>Se diseña la pantalla chica y después se agranda.</p></li>
     <li><strong>Una cosa grande.</strong><p>La cifra de la región tiene la mayor jerarquía de la pantalla.</p></li>
     <li><strong>Contraste y foco.</strong><p>Contraste mínimo de 4,5:1, foco visible y objetivos táctiles de al menos 44 px. El color nunca es el único portador de significado.</p></li>
-    <li><strong>Sin adjetivos y nada por comuna.</strong><p>No se escribe «alarmante» ni «histórico». La ENE no entrega datos comunales y el producto no los muestra.</p></li>
+    <li><strong>Nada por comuna.</strong><p>La ENE no entrega datos comunales y el producto no los muestra.</p></li>
   </ol>
 </div></section>
 
@@ -525,8 +525,8 @@ footer{padding:var(--espacio-5) 0;font-size:var(--texto-s)}
     <tbody id="textos"></tbody>
   </table></div>
 
-  <h3>Palabras que no se usan</h3>
-  <p style="font-size:var(--texto-s)">Adjetivos que valoran la cifra («alarmante», «histórico», «preocupante»), causas que el INE no publica, proyecciones y cualquier dato por comuna. El producto describe: dice cuánto es, cuánto cambió y de dónde viene el dato.</p>
+  <h3>Lo que los textos no incluyen</h3>
+  <p style="font-size:var(--texto-s)">Causas del desempleo que el INE no publica, proyecciones y cualquier dato por comuna. El producto describe: dice cuánto es, cuánto cambió y de dónde viene el dato.</p>
 </div></section>
 
 <section class="ds" id="s10"><div class="contenedor">
@@ -763,7 +763,7 @@ document.getElementById("atomos").innerHTML=
   comp({id:"c-etiqueta",nombre:"Etiqueta",nivel:"Átomo",
     tokens:["--texto-xs","--borde-fino","--borde-grueso","--radio-s","--color-superficie-suave","--espacio-1","--espacio-2"],
     usalo:"nombrar el origen del dato («INE · ENE») o marcar la región elegida con texto («Tu región»).",
-    no:"funcionar como botón, ni indicar algo solo con color, ni llevar adjetivos.",
+    no:"funcionar como botón ni indicar algo solo con color.",
     fijo:'<p class="variante">Variantes</p><div class="estados"><div class="estado"><span>Origen</span><span class="etiqueta" style="display:inline-block;font-weight:700">INE · ENE</span></div><div class="estado"><span>Región seleccionada</span><span class="etiqueta sel" style="display:inline-block">Tu región</span></div></div>',
     nota:NOTA_NI})+
   comp({id:"c-selector",nombre:"Campo / selector",nivel:"Átomo",
